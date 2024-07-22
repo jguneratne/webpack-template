@@ -6,21 +6,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "gh-deploy": "gh-pages -d dist",
+    "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "ejs": "^3.1.10",
     "eslint": "^8.43.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "html-webpack-plugin": "^5.5.3",
+    "html-bundler-webpack-plugin": "^3.15.1",
     "prettier": "2.8.8",
-    "style-loader": "^3.3.3",
+    "responsive-loader": "^3.1.2",
+    "sharp": "^0.33.4",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
